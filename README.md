@@ -41,4 +41,15 @@ Aqui vai o passo a passo de como instalar essa ferramenta:
         
         sudo apt upgrade
         
-        sudo apt install python3
+        sudo apt install python3-pip
+
+        sudo apt install git
+
+        git clone https://github.com/Berkxp/olhoeterno.git
+
+        cd olhoeterno
+
+        python3 install.py
+
+        python3 olhoeterno.py
+        
