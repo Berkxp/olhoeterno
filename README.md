@@ -23,18 +23,18 @@ Aqui vai o passo a passo de como instalar essa ferramenta:
 
 ## Termux (Android):
 
-´´´
-apt install python -y
-
-apt install git
-
-git clone https://github.com/Berkxp/olhoeterno.git
-
-cd olhoeterno
-
-bash install.sh
-
-python olhoeterno.py´´´
+    ´´´
+    apt install python -y
+    
+    apt install git
+    
+    git clone https://github.com/Berkxp/olhoeterno.git
+    
+    cd olhoeterno
+    
+    bash install.sh
+    
+    python olhoeterno.py´´´
 
 ## Kali Linux:
 ´´´
