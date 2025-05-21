@@ -23,7 +23,6 @@ Aqui vai o passo a passo de como instalar essa ferramenta:
 
 ## Termux (Android):
 
-    ´´´
     apt install python -y
     
     apt install git
@@ -34,9 +33,12 @@ Aqui vai o passo a passo de como instalar essa ferramenta:
     
     bash install.sh
     
-    python olhoeterno.py´´´
+    python olhoeterno.py´
 
 ## Kali Linux:
-´´´
-apt install python-is-python3
-´´´
+        
+        sudo apt update
+        
+        sudo apt upgrade
+        
+        sudo apt install python3
