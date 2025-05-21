@@ -22,7 +22,7 @@ Essa ferramenta deve ser usada apenas para fins educacionais e éticos, qualquer
 Aqui vai o passo a passo de como instalar essa ferramenta:
 
 ## Termux (Android):
-´´´
+'''
 apt install python -y
 
 apt install git
@@ -35,7 +35,7 @@ bash install.sh
 
 python olhoeterno.py
 
-´´´
+'''
 
 ## Kali Linux:
 ´´´
