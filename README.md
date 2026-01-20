@@ -1,3 +1,4 @@
+
 # Olho Eterno v1.0
 Olho Eterno é uma ferramenta hacker, que contém várias funções, como:
 
@@ -31,7 +32,7 @@ Aqui vai o passo a passo de como instalar essa ferramenta:
     
     cd olhoeterno
     
-    bash install.sh
+    bash install_kali.py
     
     python olhoeterno.py´
 
@@ -49,7 +50,7 @@ Aqui vai o passo a passo de como instalar essa ferramenta:
 
         cd olhoeterno
 
-        python3 install.py
+        python3 install_kali.py
 
         python3 olhoeterno.py
         
