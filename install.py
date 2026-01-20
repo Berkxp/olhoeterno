@@ -18,7 +18,7 @@ def instalar_pacotes():
                         break
 
             # Comandos para diferentes distribuições Linux
-            if distro in ["ubuntu", "debian"]:
+            if distro in ["ubuntu", "debian", "linuxmint"]:
                 os.system("sudo apt update")
                 os.system("sudo apt install python3 python3-pip git -y")
             elif distro in ["fedora"]:
@@ -38,14 +38,15 @@ def instalar_pacotes():
         return  # Retorna se o sistema não for suportado
 
     # Instala pacotes Python
-    os.system("pip install socket")
+    os.system("pip install sockets")
     os.system("pip install faker")
     os.system("pip install colorama")
     os.system("pip install requests")
-    os.system("pip install python-whois")
+    os.system("pip install whois")
     
     print("Instalação completa!")
     os.system("python olhoeterno.py")
 
 # Chama a função
+
 instalar_pacotes()
