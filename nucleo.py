@@ -3672,6 +3672,7 @@ def menuhacking():
             os.system("cls")
         else:
             os.system("clear")
+        banner()
         print("""
                                                  ______________________________
                                                 |                              |
@@ -3760,8 +3761,9 @@ def menu():
 
 """)
         print(Fore.LIGHTWHITE_EX + "\r")
-        option = input("[+] Qual opção? ")
+        option = input("[+] Qual opção? ").lower()
         if option == "1" or option == "01":
+            banner()
             print("""
                                              ______________________________          
                                             |                              |
@@ -3786,7 +3788,13 @@ def menu():
                 menu()
         elif option == "2" or option == "02": menuhacking()
         elif option == "3" or option == "03": links()
+        elif option == "q":
+                 if sistema == "Windows"
+                     os.system("cls")
+                 else:
+                     os.system("clear")
         else:
             print("[+] Opção Inválida")
             time.sleep(1)
+
             menu()
