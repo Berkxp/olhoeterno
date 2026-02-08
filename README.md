@@ -14,6 +14,8 @@ Olho Eterno é uma ferramenta hacker, que contém várias funções, como:
 
 ──── Domain Lookup
 
+──── Activate Tor
+
 Essa ferramenta não contém só essas opções, ela tem mais coisas, mas de hacking é isso (Mais opções serão implementadas no futuro)
 
 # Aviso!
@@ -28,7 +30,7 @@ Aqui vai o passo a passo de como instalar essa ferramenta:
 
     apt install python -y
     
-    apt install git
+    apt install git -y
     
     git clone https://github.com/Berkxp/olhoeterno.git
     
@@ -40,13 +42,13 @@ Aqui vai o passo a passo de como instalar essa ferramenta:
 
 ## Kali Linux:
         
-        sudo apt update
+        sudo apt update -y
         
-        sudo apt upgrade
+        sudo apt upgrade -y
         
         sudo apt install python3-pip
 
-        sudo apt install git
+        sudo apt install git -y
 
         git clone https://github.com/Berkxp/olhoeterno.git
 
