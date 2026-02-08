@@ -20,7 +20,7 @@ def instalar_pacotes():
             # Comandos para diferentes distribuições Linux
             if distro in ["ubuntu", "debian", "linuxmint"]:
                 os.system("sudo apt update")
-                os.system("sudo apt install python3 python3-pip git -y")
+                os.system("sudo apt install python3 python3-pip git tor -y")
             elif distro in ["fedora"]:
                 os.system("sudo dnf install python3 python3-pip git -y")
             elif distro in ["arch"]:
@@ -50,3 +50,4 @@ def instalar_pacotes():
 # Chama a função
 
 instalar_pacotes()
+
