@@ -3293,15 +3293,18 @@ dados = {
     "41": dado41,
 }
 
+def limpar():
+     if sistema == "Windows"
+         os.system("cls")
+     else:
+         os.system("clear")
+
 def backmenu():
     backmenu = input("[+] Voltar ao menu?(sim/não): ")
     if backmenu in ["ss", "sim", "s"]:
         menu()
     else:
-        if sistema == "Windows":
-            os.system('cls')
-        else:
-            os.system('clear')
+        limpar()
         exit()
 
 def iplookup(ip):
@@ -3610,7 +3613,7 @@ def dadosver():
         print(Fore.LIGHTRED_EX + f"{dados[num].strip()}")
         print(Fore.LIGHTWHITE_EX + "\n")
     else:
-        print(f"[+] Não consegui encontrar o dado '{num}' em nosso banco de dados")
+        print(f"[+] Não foi possivel encontrar o dado '{num}' em nosso banco de dados")
     backmenu()
         
 def startddos():
@@ -3668,10 +3671,7 @@ def banner():
 
 def menuhacking():
     while True:
-        if sistema == "Windows":
-            os.system("cls")
-        else:
-            os.system("clear")
+        limpar()
         banner()
         print("""
                                                  ______________________________
@@ -3699,22 +3699,17 @@ def menuhacking():
         elif option == "5" or option == "05": domainlookupres()
         elif option == "0" or option == "00": menu()
         elif option == "q" or option == "Q":
-            if sistema == "Windows":
-                os.system("cls")
-            else:
-                os.system("clear")
+            limpar()
             exit()
         else:
             print("[+] Opção Inválida")
             time.sleep(1)
+            limpar()
             menuhacking()
 
 def links():
     while True:
-        if sistema == "Windows":
-            os.system("cls")
-        else:
-            os.system("clear")
+        limpar()
         banner()
         print("""
                                                  ______________________________
@@ -3732,8 +3727,9 @@ def links():
         if option == "1" or option == "01": linksper()
         elif option == "2" or option == "02": linksjogos()
         elif option == "0" or option == "00": menu()
-        elif option == "2" or option == "02": os.system("clear"), exit()
+        elif option == "2" or option == "02": limpar(), exit()
         else:
+            limpar()
             print("[+] Opção Inválida")
             time.sleep(1)
             links()
@@ -3741,10 +3737,7 @@ def links():
 
 def menu():
     while True:
-        if sistema == 'Windows':
-            os.system("cls")
-        else:
-            os.system('clear')
+        limpar()
         banner()
         print("""
                                              ______________________________
@@ -3763,6 +3756,7 @@ def menu():
         print(Fore.LIGHTWHITE_EX + "\r")
         option = input("[+] Qual opção? ").lower()
         if option == "1" or option == "01":
+            limpar()
             banner()
             print("""
                                              ______________________________          
@@ -3781,20 +3775,18 @@ def menu():
             if optiondados == "1" or optiondados == "01": dadosver()
             elif optiondados == "2" or optiondados == "02": gerardadosfic()
             elif optiondados == "0" or optiondados == "00": menu()
-            elif optiondados == "q": os.system("clear"), exit()
+            elif optiondados == "q": limpar(), exit()
             else:
                 print("[+] Opção Inválida")
-                time.sleep(1)
+                time.sleep(2)
+                limpar()
                 menu()
         elif option == "2" or option == "02": menuhacking()
         elif option == "3" or option == "03": links()
-        elif option == "q":
-                 if sistema == "Windows"
-                     os.system("cls")
-                 else:
-                     os.system("clear")
+        elif option == "q": limpar(), exit()
         else:
             print("[+] Opção Inválida")
-            time.sleep(1)
-
+            time.sleep(2)
+            limpar()
             menu()
+
