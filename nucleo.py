@@ -7,7 +7,7 @@ from faker import Faker
 from colorama import Fore
 import whois
 import platform
-import * from dados
+from dados import *
 sistema = platform.system()
 
 dados = {
@@ -550,6 +550,7 @@ def menu():
             time.sleep(2)
             limpar()
             menu()
+
 
 
 
