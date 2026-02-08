@@ -415,6 +415,11 @@ def ipbyurlres():
     print(f"[+] O IP de {site} é {resultado}")
     backmenu()
 
+def tor():
+    print("[+] Ativando Tor...")
+    time.sleep(1.5)
+    os.system("tor")
+
 def banner():
     print(Fore.LIGHTWHITE_EX + """
                  ██████╗ ██╗     ██╗  ██╗ ██████╗     ███████╗████████╗███████╗██████╗ ███╗   ██╗ ██████╗ 
@@ -447,6 +452,8 @@ def menuhacking():
                                                 |                              |
                                                 |────[5] Domain Lookup         |
                                                 |                              |
+                                                |────[6] Activate Tor          |            
+                                                |                              |
                                                 |────[0] Voltar ao menu        |
                                                 |                              |
                                                 |────[Q] Quit                  |
@@ -458,6 +465,7 @@ def menuhacking():
         elif option == "3" or option == "03": ipbyurlres()
         elif option == "4" or option == "04": iplookresult()
         elif option == "5" or option == "05": domainlookupres()
+        elif option == "6" or option == "06": tor()
         elif option == "0" or option == "00": menu()
         elif option == "q" or option == "Q":
             limpar()
@@ -550,6 +558,7 @@ def menu():
             time.sleep(2)
             limpar()
             menu()
+
 
 
 
