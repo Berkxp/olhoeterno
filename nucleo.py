@@ -55,7 +55,7 @@ dados = {
 }
 
 def limpar():
-     if sistema == "Windows"
+     if sistema == "Windows":
          os.system("cls")
      else:
          os.system("clear")
@@ -558,6 +558,7 @@ def menu():
             time.sleep(2)
             limpar()
             menu()
+
 
 
 
